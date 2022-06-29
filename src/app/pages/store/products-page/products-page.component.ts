@@ -1,4 +1,6 @@
+import { DataService } from './../../../service/data.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-products-page',
@@ -6,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPageComponent implements OnInit {
 
-  constructor() { }
+  public products$: Observable<any[]>;
+
+  constructor(
+    private data: DataService
+  ) { 
+  
+  }
 
   ngOnInit(): void {
+    this.products$ = this.data.getProducts();
+    this.showProducts()
+  }
+  showProducts(){
+    console.log(this.products$)
   }
 
 }
