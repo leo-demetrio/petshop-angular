@@ -1,14 +1,20 @@
 {    
     "products": [
         {
-            "id": "1",
+            "_id": "1",
             "title": "Ração",
-            "price": "70,90"
+            "price": "70,90",
+            "category": "ração",
+            "description": "golden",
+            "image": "https://www.petlove.com.br/images/products/224974/product/Ra%C3%A7%C3%A3o_Seca_Pedigree_para_C%C3%A3es_Adultos_Ra%C3%A7as_Pequenas_3104845.jpg?1627721469"
         },
         {
-            "id": "1",
+            "_id": "1",
             "title": "Ração",
-            "price": "70,90"
+            "price": "70,90",
+            "category": "ração",
+            "description": "golden",
+            "image": "https://www.petlove.com.br/images/products/224974/product/Ra%C3%A7%C3%A3o_Seca_Pedigree_para_C%C3%A3es_Adultos_Ra%C3%A7as_Pequenas_3104845.jpg?1627721469"
         }         
         
     ]       
