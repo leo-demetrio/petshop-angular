@@ -1,5 +1,5 @@
 export class Product {
-    public _di: string;
+    public _id: string;
     public title: string;
     public category: string;
     public description: string;
