@@ -8,12 +8,16 @@ import { delay, first, tap } from 'rxjs';
 })
 export class DataService {
 
+  public url = 'http://localhost:3000';
   constructor(
     private http: HttpClient
   ) { }
   getProducts() {
-    return this.http.get<Product[]>('http://localhost:3000/products')
+  return this.http.get<Product[]>(`${this.url}/products`)
     .pipe(
       tap(product => console.log(product)))      
+  }
+  authenticate(data: any) {
+    return this.http.post(`${this.url}/accounts/authenticate`, data);
   }
 }

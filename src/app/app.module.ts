@@ -13,6 +13,7 @@ import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
 import { FramePageComponent } from './pages/master/frame.page';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductCardComponent } from './components/store/product-card/product-card.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductCardComponent } from './components/store/product-card/product-ca
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
